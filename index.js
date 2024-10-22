@@ -103,3 +103,13 @@ obj.forEach((item) =>{
 })
 
 console.log(nameCount)
+
+const arr = [[5,4], [8,7], [10,9]];
+
+const sortedSubArray = arr.map(subArr => subArr.sort((a,b)=> a-b))
+
+console.log(sortedSubArray)
+
+const sortedArray = sortedSubArray.sort((a,b) => a[0]-b[0])
+
+console.log(sortedArray)
